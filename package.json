@@ -5,15 +5,34 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": { "business-check": "dist/cli.js" },
-  "files": ["dist", "README.md", "LICENSE"],
+  "bin": {
+    "business-check": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "tsx --test test/*.test.ts",
-    "prepublishOnly": "npm run build && npm test"
+    "prepublishOnly": "npm run build && npm test",
+    "prepare": "tsc -p tsconfig.json"
   },
-  "engines": { "node": ">=20" },
-  "keywords": ["scam", "fraud", "osint", "phishing", "fake-store", "consumer-protection", "domain", "rdap", "investigation"],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "scam",
+    "fraud",
+    "osint",
+    "phishing",
+    "fake-store",
+    "consumer-protection",
+    "domain",
+    "rdap",
+    "investigation"
+  ],
   "author": "Matthew Porter (ThreatShield Alpha) <matt.porter@echo-trace.com>",
   "license": "MIT",
   "homepage": "https://threatshieldalpha.net/check/business",
@@ -21,5 +40,12 @@
     "@types/node": "^22.14.0",
     "tsx": "^4.21.0",
     "typescript": "~5.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MPorter-7/business-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MPorter-7/business-check/issues"
   }
 }

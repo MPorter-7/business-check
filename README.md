@@ -5,7 +5,7 @@
 Built by [ThreatShield Alpha](https://threatshieldalpha.net) to help regular people avoid fake online stores, fake service companies and copycat websites. Try it online at **[threatshieldalpha.net/check/business](https://threatshieldalpha.net/check/business)**.
 
 ```
-$ npx business-check luxe-outlet-sale.shop
+$ npx github:MPorter-7/business-check luxe-outlet-sale.shop
 
 luxe-outlet-sale.shop  →  HIGH RISK  (risk 100/100)
 Luxe Outlet shows several serious warning signs.
@@ -44,8 +44,14 @@ Every red flag comes from a simple, readable rule in [`src/scoring.ts`](src/scor
 Requires Node.js 20 or newer. There are no runtime dependencies.
 
 ```bash
-npx business-check example-shop.com          # readable report
-npx business-check example-shop.com --json   # full result as JSON
+npx github:MPorter-7/business-check example-shop.com          # readable report
+npx github:MPorter-7/business-check example-shop.com --json   # full result as JSON
+```
+
+To use it in your own project:
+
+```bash
+npm install github:MPorter-7/business-check
 ```
 
 In your own code:
