@@ -4,11 +4,13 @@
 
 Built by [ThreatShield Alpha](https://threatshieldalpha.net) to help regular people avoid fake online stores, fake service companies and copycat websites. Try it online at **[threatshieldalpha.net/check/business](https://threatshieldalpha.net/check/business)**.
 
-```
-$ npx github:MPorter-7/business-check luxe-outlet-sale.shop
+Here's an example of what it prints for a **made-up** scam store (`.example` addresses are reserved and can never belong to a real business):
 
-luxe-outlet-sale.shop  →  HIGH RISK  (risk 100/100)
-Luxe Outlet shows several serious warning signs.
+```
+$ npx github:MPorter-7/business-check scam-store.example
+
+scam-store.example  →  HIGH RISK  (risk 100/100)
+Scam Store shows several serious warning signs.
 
 Red flags
   ● Website is brand new
